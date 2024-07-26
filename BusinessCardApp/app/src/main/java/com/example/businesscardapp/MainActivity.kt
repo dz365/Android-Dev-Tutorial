@@ -67,7 +67,8 @@ fun ContactInfoItem(
         )
         Text(
             text = content,
-            fontSize = 14.sp
+            fontSize = 14.sp,
+            color = Color(0xFF0D652D)
         )
     }
 }
@@ -76,7 +77,7 @@ fun ContactInfoItem(
 fun BusinessCardScreen(name: String, modifier: Modifier = Modifier) {
     Box(
         modifier = Modifier
-            .fillMaxSize()
+            .fillMaxSize().background(Color(0xFFd0ecd4))
     ) {
         Column(
             horizontalAlignment = Alignment.CenterHorizontally,
@@ -100,7 +101,7 @@ fun BusinessCardScreen(name: String, modifier: Modifier = Modifier) {
             )
             Text(
                 text = "Aspiring Android Developer",
-                color = Color(0xFF697375),
+                color = Color(0xFF34A853),
             )
         }
         Column(
